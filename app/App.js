@@ -1,8 +1,9 @@
 import React from "react"
+import { hot } from "react-hot-loader"
 import StatefulComponent from "StatefulComponent"
 import { Ohayo } from "my-library"
 
-export default function App() {
+function App() {
   return(
     <div>
       <div>{Ohayo("Kyle")}</div>
@@ -11,3 +12,5 @@ export default function App() {
     </div>
   )
 }
+
+export default hot(module)(App)
